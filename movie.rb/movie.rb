@@ -15,13 +15,15 @@ class Movie
             "#{@title}, has a rank of #{@rank}"
         end
     end
-# movie = Movie.new("TPF", 8)
-# puts movie.title
-# puts movie.rank
+    if __FILE__== $0
+movie = Movie.new("TPF", 8)
+puts movie.title
+puts movie.rank
 
-# puts movie.thump_up
-# puts movie.thump_down
-# puts movie.rank
+puts movie.thump_up
+puts movie.thump_down
+puts movie.rank
+    end
 
 
 

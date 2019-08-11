@@ -9,4 +9,9 @@ playlist1 = Playlist.new("Simon")
 playlist1.add_movie(movie1)
 playlist1.add_movie(movie2)
 playlist1.add_movie(movie3)
-playlist1.play
+playlist1.play()
+
+movie4 = Movie.new("Power", 3)
+playlist2 = Playlist.new("Kamande")
+playlist2.add_movie(movie4)
+playlist2.play()
