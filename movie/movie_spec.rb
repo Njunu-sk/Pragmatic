@@ -38,4 +38,32 @@ describe Movie do
         @movie.rank.should == 0
     end
     end
+
+    context "with a rank of a least 6" do
+        before do
+            @movie = Movie.new("gotham", 6)
+        end
+
+        it "is a hit " do
+            @movie.hit?.should == true
+        end
+
+        it "is a hit status " do
+            @movie.status.should == "Hit"
+        end
+    end
+
+    context "with a rank of less than 6" do
+        before do
+            @movie = Movie.new("gotham", 5)
+        end
+
+        it "is not a hit " do
+            @movie.hit?.should == false
+        end
+
+        it "is a flop status " do
+            @movie.status.should == "Floop"
+        end
+    end
 end
