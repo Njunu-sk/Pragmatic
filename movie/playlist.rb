@@ -18,6 +18,7 @@ class Playlist
             add_movie(movie)
         end
     end
+    
 
     def play(viewings)
         snacks = Snackbar::SNACKS
