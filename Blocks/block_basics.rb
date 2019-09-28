@@ -36,6 +36,7 @@ class Store
 
         puts "Pending orders:"
         puts stores.any? { |o| o.status == :pending }
+        puts "This outputs the first pending order"
         order = stores.detect { |o| o.status == :pending }
         puts order
 
